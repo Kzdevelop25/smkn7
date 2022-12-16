@@ -1,0 +1,254 @@
+body {
+    background-color: rgb(215, 248, 215);
+}
+
+.header-top {
+    background-color: rgb(215, 248, 215);
+}
+
+.header .header-top nav ul li:hover {
+    font-weight: bold;
+}
+
+.header .header-top button {
+    border: none;
+    transition: .75s;
+}
+
+.header .header-top button:hover {
+    /* background-color: #198754; */
+    color: #fff;
+}
+
+.header .header-top button:focus {
+    box-shadow: none;
+}
+
+nav.bor {
+    border-bottom: 8px solid rgb(155, 202, 155);
+}
+
+.dropdown:hover>.dropdown-menu {
+    display: block;
+    margin-top: .125rem;
+}
+
+.dropdown {
+    text-transform: capitalize;
+}
+
+.dropdown a:hover {
+    background-color: rgb(155, 202, 155);
+    transition: .125s;
+}
+
+.dropdown .dropdown-menu li a {
+    color: #fff;
+    transition: .125s;
+}
+
+.dropdown .dropdown-menu li a:hover {
+    color: #333;
+    background-color: rgb(155, 202, 155);
+}
+
+section .kartu .card {
+    border: none;
+    width: 20rem;
+}
+
+marquee {
+    font-weight: bold;
+    width: 100%;
+    text-transform: uppercase;
+    height: 30px;
+}
+
+.kontennya {
+    margin-top: 60px;
+}
+
+.artikel {
+    position: relative;
+    border-top: 2px solid green;
+}
+
+.artikel .header-text-top {
+    position: absolute;
+    top: -35px;
+    border-top: 2px solid green;
+    border-right: 2px solid green;
+    border-left: 2px solid green;
+
+
+}
+
+
+
+.card-position-home {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    height: 20rem;
+    padding: 1.5rem;
+}
+
+.image-home {
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: .8;
+    transition: 0.75s;
+}
+
+.image-home {
+    border-radius: .15rem;
+
+}
+
+.kontennya .konten-2 .pagination .hal {
+    background-color: #fff;
+    border-radius: .75rem;
+    color: #333;
+}
+
+.kontennya .konten-2 .hover-hal:hover {
+    box-shadow: 0px 0px 0px 1px #fff, 0px 0px 5px 5px #198754;
+    background-color: #198754;
+    color: #fff;
+}
+
+
+.kontennya .konten-2 .pagination .hal:active {
+    opacity: .8;
+}
+
+.kontennya .konten-2 .pagination .hal:hover {
+    opacity: .8;
+}
+
+.icon-gif .container-fluid .row .card .fs-sm {
+    font-weight: bold;
+}
+
+
+.kontennya .profil-guru .box {
+    width: 350px;
+    height: 500px;
+    background-color: rgb(155, 202, 155);
+    border-radius: .5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    margin: 20px 10px;
+    padding: 15px;
+}
+
+.kontennya .profil-guru .model {
+    height: 350px;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+#footer .navbar .nav-item .nav-link {
+    padding: 2px 8px 5px 28px;
+    color: #fff;
+    cursor: pointer;
+    margin-right: 1em;
+    font-size: 20px;
+    border-radius: 20px;
+    border: 3px solid rgb(155, 202, 155);
+}
+
+
+#footer .navbar .nav-item .nav-link:hover {
+    background-color: rgb(215, 248, 215);
+    color: #198754;
+}
+
+#footer .navbar h4 {
+    letter-spacing: 1px;
+}
+
+#footer .cipta {
+    border-top: 1px dashed #fff;
+    margin-top: 5px;
+}
+
+#footer .container .card-img {
+    background-color: black;
+    width: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 320px) {
+    form {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .header-search .navbar .navbar-brand {
+        font-size: 12px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .navbar .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    form {
+        margin-top: 10px;
+    }
+
+    nav.navbar .nav-sm {
+        display: none;
+    }
+
+    nav.bor {
+        border-bottom: none;
+    }
+
+    section .container .d-flex {
+        flex-direction: column;
+    }
+
+    section .Karousel .carousel-inner {
+        width: 90vw;
+    }
+
+    section .kartu img {
+        width: 90vw;
+    }
+
+    .card-position-home {
+        object-fit: cover;
+    }
+
+    .kontennya .login .img-login {
+        display: none;
+    }.icon-gif .container .card img {
+        width: 60px;
+    }
+
+}

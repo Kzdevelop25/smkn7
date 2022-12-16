@@ -1,0 +1,673 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SMKN7 MAKASSAR</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+  <header class="header">
+    <div class="header-top">
+      <nav class="navbar">
+        <div class="container">
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Kategori</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Berita Sekolah</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Program Sekolah</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Peraturan Sekolah</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Organisasi Sekolah</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Fasilitas Sekolah</a>
+                </li>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="header-search">
+
+      <nav class="navbar bg-light">
+        <div class="container">
+          <div class="logo d-flex flex-sm-column flex-md-row">
+
+            <a class="navbar-brand" href="#">
+              <img src="https://www.smkn7makassar.sch.id/upload/imagecache/16470757LOGOSEKOLAH-104x100.jpg"
+                alt="LOGO SEKOLAH">
+            </a>
+            <div class="navbar-brand mt-4">
+              <p>SMK NEGERI 7 MAKASSAR</p>
+              <p>Kota Makassar</p>
+            </div>
+          </div>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-success" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <nav class="navbar navbar-expand bg-success p-0 bor mb-lg-3">
+    <div class="container nav-sm">
+      <a class="navbar-brand text-light px-3" href="#" style="background-color: rgb(155, 202, 155);"><i
+          class="fa-solid fa-house"></i></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ">
+          <li class="nav-item dropdown ">
+            <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Profil Sekolah
+            </a>
+            <ul class="dropdown-menu bg-success">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown ">
+            <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Visi Dan Misi Sekolah
+            </a>
+            <ul class="dropdown-menu bg-success">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown ">
+            <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Statistik Sekolah
+            </a>
+            <ul class="dropdown-menu bg-success">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown ">
+            <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Informasi Sekolah
+            </a>
+            <ul class="dropdown-menu bg-success">
+              <li><a class="dropdown-item" href="#footer">footer test</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="carousell overflow-hidden">
+    <div class="container p-0">
+      <div class="row ">
+        <div class="col-lg-8">
+
+          <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="https://www.smkn7makassar.sch.id/upload/imagecache/41999655WhatsAppImage2022-10-21at13.05.32-400x300.jpeg"
+                  class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://www.smkn7makassar.sch.id/upload/imagecache/85065328WhatsAppImage2022-10-21at13.05.27-400x300.jpeg"
+                  class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://www.smkn7makassar.sch.id/upload/imagecache/86454495WhatsAppImage2022-10-21at13.05.32(2)-400x300.jpeg"
+                  class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next " type="button" data-bs-target="#carouselExampleControls"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon " aria-hidden="true"></span>
+            </button>
+          </div>
+        </div>
+        <div class="kartu mt-4 col-lg-4 col-md-12">
+          <div class="card bg-transparent w-100">
+
+            <center>
+
+              <img src="assets/images/kepalasekolah.bmp" class="" alt="...">
+            </center>
+            <div class="card-body">
+              <h5 class="card-title text-uppercase">pergantian kepala sekolah smkn7 makassar</h5>
+              <p class="card-text"></p>
+              <a href="#" class="btn btn-success">Selengkapnya</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="marquee">
+
+    <div class="mb-4  mt-4">
+      <span class="p-2  rounded-top text bg-success text-light"><i class="fa-solid fa-circle-info me-2"></i>Sekilas
+        Info</span>
+      <div>
+        <marquee behavior="scroll" class="bg-success text-light w-100 ">Selamat Datang Di Website Smkn7 Makassar
+        </marquee>
+      </div>
+    </div>
+  </section>
+  <section class="icon-gif">
+    <div class="container align-items-center">
+
+      <div class="row ">
+
+        <div class="col-lg-2 col-4 postion-relative">
+          <div class="card text-center mb-2" style="height: 8rem;">
+            <a href="#" class="fs text-decoration-none text-dark ">
+              <img src="assets/images/google-maps.gif" alt="" width="80">
+              <div class="card-text fs-sm fw-bold">
+                Peta Sekolah
+              </div>
+          </div>
+
+          </a>
+        </div>
+        <div class="col-lg-2 col-md-4 col-4">
+          <div class="card text-center mb-2" style="height: 8rem;">
+            <a href="#" class="text-decoration-none text-dark ">
+              <img src="assets/images/worldwide.gif" alt="" width="80">
+              <div class="card-text fs-sm fw-bold">
+                Informasi Sekolah
+              </div>
+
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-4 mb-2 col-4">
+
+          <div class="card text-center mb-2" style="height: 8rem;">
+            <a href="#" class="text-decoration-none text-dark ">
+              <img src="assets/images/book.gif" alt="" width="80">
+              <div class="card-text fs-sm fw-bold">
+                Arsip Sekolah
+              </div>
+
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-4 col-4">
+
+
+          <div class="card text-center mb-2" style="height: 8rem;">
+            <a href="#" class="text-decoration-none text-dark ">
+              <img src="assets/images/photo-camera.gif" width="80" alt="">
+              <div class="card-text fs-sm fw-bold">
+                Album Sekolah
+              </div>
+
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-4 col-4">
+
+          <div class="card text-center  mb-2" style="height: 8rem;">
+            <a href="#" class="text-decoration-none text-dark ">
+              <img src="assets/images/video-camera.gif" width="80" alt="">
+              <div class="card-text fs-sm fw-bold">
+                Video Sekolah
+              </div>
+
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-4 col-4">
+
+          <div class="card text-center  mb-2" style="height: 8rem;">
+            <a href="#" class="text-decoration-none text-dark ">
+              <img src="assets/images/shopping-cart.gif" width="80" alt="">
+              <div class="card-text fs-sm fw-bold">
+                Lapak Sekolah
+              </div>
+
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-4 col-4 col-4">
+
+          <div class="card text-center mb-2" style="height: 8rem;">
+            <a href="#" class="text-decoration-none text-dark ">
+              <img src="assets/images/fingerprint-scan.gif" width="80" alt="">
+              <div class="card-text fs-sm fw-bold">
+                Aplikasi Sekolah
+              </div>
+
+            </a>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="kontennya ">
+    <div class="container">
+
+      <div class="artikel p-2">
+
+        <span class="header-text-top p-1 px-2 fs-6 text-uppercase fw-bold">Artikel Terkini</span>
+        <div class="row">
+          <div class="mb-1">
+            <button type="button" class="btn btn-success "><i class="fa-solid fa-folder-open mx-2"></i>Indeks
+              Artikel</button>
+          </div>
+          <div class="mb-1">
+            <button type="button" class="btn btn-success "><i class="bi bi-card-list mx-2"></i>Kategori Artikel</button>
+
+          </div>
+
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6 ">
+            <div class="card mt-3 " style="background-color: rgb(215, 248, 215); border:none;">
+              <div class="card-position-home">
+                <a href="#" class="card-img">
+                  <img src="assets/images/Project foto 2023/imam-ardi.jpg" class="image-home " alt="GAMBAR">
+                </a>
+              </div>
+              <div class="card-body text-success ">
+                <h5 class="card-title">test</h5>
+                <p class="kalender"><i class="bi bi-calendar4 mx-2"></i><span class="me-2">13 Desember 2022</span><i
+                    class="bi bi-person-fill mx-2"></i><span class="text-capitalize">siswa</span></p>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.... <a href="#" class="card-link text-success"> Selengkapnya</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 ">
+            <div class="card mt-3 " style="background-color: rgb(215, 248, 215); border:none;">
+              <div class="card-position-home">
+                <a href="" class="card-img">
+                  <img src="assets/images/Project foto 2023/fotokelas.jpg" alt="GAMBAR" class="image-home">
+                </a>
+              </div>
+              <div class="card-body text-success ">
+                <h5 class="card-title">Suneo</h5>
+                <p class="kalender"><i class="bi bi-calendar4 mx-2"></i><span class="me-2">13 Desember 2022</span><i
+                    class="bi bi-person-fill mx-2"></i><span class="text-capitalize">siswa</span></p>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.... <a href="#" class="card-link text-success"> Selengkapnya</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 ">
+            <div class="card mt-3 " style="background-color: rgb(215, 248, 215); border:none;">
+              <div class="card-position-home">
+                <a href="#" class="card-img">
+                  <img src="assets/images/Project foto 2023/bk.jpg" class="image-home" alt="GAMBAR">
+                </a>
+              </div>
+              <div class="card-body text-success ">
+                <h5 class="card-title">test</h5>
+                <p class="kalender"><i class="bi bi-calendar4 mx-2"></i><span class="me-2">13 Desember 2022</span><i
+                    class="bi bi-person-fill mx-2"></i><span class="text-capitalize">siswa</span></p>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.... <a href="#" class="card-link text-success"> Selengkapnya</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 ">
+            <div class="card mt-3 " style="background-color: rgb(215, 248, 215); border:none;">
+              <div class="card-position-home">
+                <a href="" class="card-img">
+                  <img src="assets/images/Project foto 2023/rahmat.jpg" class="image-home" alt="GAMBAR">
+                </a>
+              </div>
+              <div class="card-body text-success ">
+                <h5 class="card-title">test</h5>
+                <p class="kalender"><i class="bi bi-calendar4 mx-2"></i><span class="me-2">13 Desember 2022</span><i
+                    class="bi bi-person-fill mx-2"></i><span class="text-capitalize">siswa</span></p>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.... <a href="#" class="card-link text-success"> Selengkapnya</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 ">
+            <div class="card mt-3 " style="background-color: rgb(215, 248, 215); border:none;">
+              <div class="card-position-home">
+                <a href="#" class="card-img">
+                  <img src="assets/images/Project foto 2023/hansar.jpg" class="image-home" alt="GAMBAR">
+                </a>
+              </div>
+              <div class="card-body text-success ">
+                <h5 class="card-title">test</h5>
+                <p class="kalender"><i class="bi bi-calendar4 mx-2"></i><span class="me-2">13 Desember 2022</span><i
+                    class="bi bi-person-fill mx-2"></i><span class="text-capitalize">siswa</span></p>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.... <a href="#" class="card-link text-success"> Selengkapnya</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 ">
+            <div class="card mt-3 " style="background-color: rgb(215, 248, 215); border:none;">
+              <div class="card-position-home">
+                <a href="" class="card-img">
+                  <img src="assets/images/Project foto 2023/lab.jpg" class="image-home" alt="GAMBAR">
+                </a>
+              </div>
+              <div class="card-body text-success ">
+                <h5 class="card-title">test</h5>
+                <p class="kalender"><i class="bi bi-calendar4 mx-2"></i><span class="me-2">13 Desember 2022</span><i
+                    class="bi bi-person-fill mx-2"></i><span class="text-capitalize">siswa</span></p>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.... <a href="#" class="card-link text-success"> Selengkapnya</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 ">
+            <div class="card mt-3 " style="background-color: rgb(215, 248, 215); border:none;">
+              <div class="card-position-home">
+                <a href="" class="card-img">
+                  <img src="assets/images/Project foto 2023/nayah-bom.jpg" class="image-home" alt="GAMBAR">
+                </a>
+              </div>
+              <div class="card-body text-success ">
+                <h5 class="card-title">test</h5>
+                <p class="kalender"><i class="bi bi-calendar4 mx-2"></i><span class="me-2">13 Desember 2022</span><i
+                    class="bi bi-person-fill mx-2"></i><span class="text-capitalize">siswa</span></p>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.... <a href="#" class="card-link text-success"> Selengkapnya</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 ">
+            <div class="card mt-3 " style="background-color: rgb(215, 248, 215); border:none;">
+              <div class="card-position-home">
+                <a href="#" class="card-img">
+                  <img src="assets/images/Project foto 2023/bom-nyah.jpg" class="image-home" alt="GAMBAR">
+                </a>
+              </div>
+              <div class="card-body text-success ">
+                <h5 class="card-title">test</h5>
+                <p class="kalender"><i class="bi bi-calendar4 mx-2"></i><span class="me-2">13 Desember 2022</span><i
+                    class="bi bi-person-fill mx-2"></i><span class="text-capitalize">siswa</span></p>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.... <a href="#" class="card-link text-success"> Selengkapnya</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 ">
+            <div class="card mt-3" style="background-color: rgb(215, 248, 215); border:none;">
+              <div class="card-position-home">
+                <a href=" #" class="card-img">
+                  <img src="assets/images/Project foto 2023/bom-ngeluj.jpg" class="image-home" alt="GAMBAR">
+                </a>
+              </div>
+              <div class="card-body text-success ">
+                <h5 class="card-title">test</h5>
+                <p class="kalender"><i class="bi bi-calendar4 mx-2"></i><span class="me-2">13 Desember 2022</span><i
+                    class="bi bi-person-fill mx-2"></i><span class="text-capitalize">siswa</span></p>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.... <a href="#" class="card-link text-success"> Selengkapnya</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="konten-2 mt-3">
+        <div class="halaman">
+          <p class=" fw-bold">Halaman 1 dari 4</p>
+
+          <div>
+            <ul class="pagination">
+              <li class="page-item mx-2 ">
+                <a class="page-link  rounded-4 p-1 px-3 hal hover-hal " href="#">&laquo;</a>
+              </li>
+              <li class="page-item mx-2  ">
+                <a class="page-link  hal hover-hal" href="#">1</a>
+              </li>
+              <li class="page-item mx-2 ">
+                <a class="page-link  hal hover-hal" href="#">2</a>
+              </li>
+              <li class="page-item mx-2 ">
+                <a class="page-link  hal hover-hal" href="#">3</a>
+              </li>
+              <li class="page-item mx-2 ">
+                <a class="page-link  hal hover-hal" href="#">4</a>
+              </li>
+              <li class="page-item mx-2 ">
+                <a class="page-link rounded-4  px-3 p-1 hal hover-hal" href="#">&raquo;</a>
+              </li>
+            </ul>
+          </div>
+
+
+        </div>
+      </div>
+      <div class="login mt-5">
+
+        <div class="row justify-content-between">
+          <div class="col-md-6 ">
+            <div class="container text-center ">
+
+              <div class="form-group ps-5 pe-5 pb-5 bg-success rounded-4 ">
+                <label class="form-label mt-4 fs-3 text-light pb-4 text-uppercase">Login</label>
+                <div class="form-floating mb-3 ">
+                  <input type="email" class="form-control m-auto" style="background-color: rgb(155, 202, 155); "
+                    id="floatingInput" placeholder="nama@example.com">
+                  <label for="floatingInput">Masukkan Email</label>
+                </div>
+                <div class="form-floating">
+                  <input type="password" class="form-control" style="background-color: rgb(155, 202, 155);"
+                    id="floatingPassword" placeholder="Password">
+                  <label for="floatingPassword">Password</label>
+                </div>
+                <div class="d-flex justify-content-between">
+
+                  <button type="submit" class="btn text-dark mt-4 btn-light">Login</button>
+                  <a href="#" class=" text-light text-decoration-underline mt-2">Belum Punya Akun?</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 text-center">
+            <img src="assets/images/Mobile login-bro.svg" alt="" class="img-login" width="350">
+          </div>
+        </div>
+      </div>
+      <div class="profil-guru mt-5 mb-5 overflow-x">
+        <div class="container">
+          <div class="container">
+          </div>
+        </div>
+
+      </div>
+
+
+
+      <div class="statistik">
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 mb-2">
+            <div class="card">
+              <div class="card-header fw-bold" style="background-color: rgb(155,202,155);">Statistik Sekolah</div>
+              <div class="card-body">
+
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 mb-2">
+            <div class="card">
+              <div class="card-header fw-bold" style="background-color: rgb(155,202,155);">Wilayah Sekolah</div>
+              <div class="card-body">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3973.782485904822!2d119.40988841454948!3d-5.138689996270822!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dbf02abfbd08c1d%3A0xe9283193758b2144!2sJl.%20Ince%20Nurdin%2C%20Kec.%20Ujung%20Pandang%2C%20Kota%20Makassar%2C%20Sulawesi%20Selatan%2090115!5e0!3m2!1sid!2sid!4v1670892724619!5m2!1sid!2sid"
+                  style="border:0; width:100%;height:330px;" allowfullscreen="" loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 mb-2">
+            <div class="card">
+              <div class="card-header fw-bold" style="background-color: rgb(155,202,155);">Lokasi Sekolah</div>
+              <div class="card-body">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3973.784028552875!2d119.40977711402168!3d-5.138442653403137!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dbf02aeab6a235f%3A0x68a3a4c8a39d4223!2sSMK%20Negeri%207%20Makassar!5e0!3m2!1sid!2sid!4v1670865152602!5m2!1sid!2sid"
+                  style="border:0; width: 100%;" height="330px" allowfullscreen="" loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 mb-2">
+            <div class="card">
+              <div class="card-header fw-bold" style="background-color: rgb(155,202,155);">Pelaksanaan</div>
+              <div class="card-body">
+
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 mb-2">
+            <div class="card">
+              <div class="card-header fw-bold" style="background-color: rgb(155,202,155);">Pendapatan</div>
+              <div class="card-body">
+
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 mb-2">
+            <div class="card">
+              <div class="card-header fw-bold" style="background-color: rgb(155,202,155);">Pembelanjaan</div>
+              <div class="card-body">
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer id="footer" class="mt-5 bg-success pt-4">
+    <div class="container justify-content-between">
+      <div class="row">
+        <div class="col-lg-4 mb-4 text-light">
+          <h4 class="header-footer m-4 text-uppercase">smkn7 makassar</h4>
+          <p class="description-footer">Website Abal Abal Ndk Tau Kenapa</p>
+          <span class="contact-footer">
+            <nav class="navbar">
+              <ul class="navbar-nav d-flex flex-row justify-content-between w-50 align-items-end">
+                <li class="nav-item">
+                  <a href="" class="nav-link"><i class="bi bi-facebook"></i></a>
+                </li>
+                <li class="nav-item">
+                  <a href="" class="nav-link"><i class="bi bi-instagram"></i></a>
+                </li>
+                <li class="nav-item">
+                  <a href="" class="nav-link"><i class="bi bi-twitter "></i></a>
+                </li>
+                <li class="nav-item">
+                  <a href="" class="nav-link"><i class="bi bi-youtube "></i></a>
+                </li>
+              </ul>
+            </nav>
+          </span>
+        </div>
+        <div class="col-lg-4 mb-4 text-light">
+          <h4 class="header-footer m-4 text-uppercase">hubungi kami</h4>
+          <p class="description-footer text-capitalize">Jl.ince nurdin no.35, baru, kec. ujung pandang, kota makassar,
+            sulawesi selatan 90111</p>
+          <div class="email"><i class="bi bi-envelope"></i> Email: smkn7makassar35@gmail.com</div>
+        </div>
+        <div class="col-lg-4 mb-4 text-light">
+          <h4 class="header-footer m-4 text-uppercase text-center">album galeri</h4>
+          <div class="container-fluid">
+            <div class="row justify-content-between">
+              <div class="col-4">
+                <div class="card " style="width: 8rem;">
+
+                  <img
+                    src="https://www.smkn7makassar.sch.id/upload/imagecache/85065328WhatsAppImage2022-10-21at13.05.27-400x300.jpeg"
+                    alt="" class="img-footer">
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="card " style="width: 8rem;">
+
+                  <img
+                    src="https://www.smkn7makassar.sch.id/upload/imagecache/85065328WhatsAppImage2022-10-21at13.05.27-400x300.jpeg"
+                    alt="" class="img-footer">
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="card " style="width: 8rem;">
+
+                  <img
+                    src="https://www.smkn7makassar.sch.id/upload/imagecache/85065328WhatsAppImage2022-10-21at13.05.27-400x300.jpeg"
+                    alt="" class="img-footer">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="text-center fs-6 text-light cipta p-2">Mengheningkan cipta © 2022 - X-Rpl-1 </p>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
+  </script>
+  <script src="main.js"></script>
+</body>
+
+</html>
